@@ -23,14 +23,14 @@ export function ScienceStation () {
                     <button className="bg-green-600 p-2 m-1" onClick={handlePanel}>Cadastrar membro</button>
                 </div>
                 <div className="absolute top-[412px] left-[280px] border-solid border-2 border-white">
-                    <button className="bg-green-600 p-2 m-1">Consultar planetas</button>
+                    <button className="bg-green-600 disabled:opacity-70 disabled:cursor-not-allowed p-2 m-1" disabled>Consultar planetas</button>
                 </div>
                 <div className="absolute top-[912px] left-[280px] border-solid border-2 border-white">
                     <button className="bg-green-600 p-2 m-1" onClick={returnToBridge}>Voltar a ponte de comando</button>
                 </div>
             </div>
             {isPanelOpen && (
-                <Computer handlePanel={handlePanel} />
+                <Computer screen="register" handlePanel={handlePanel} />
             )}
         </div>
     )
