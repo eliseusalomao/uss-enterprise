@@ -1,5 +1,7 @@
+import { Routes } from "./routes";
+
 export function App () {
     return (
-        <p>USS Enterprise</p>
+        <Routes />
     )
 }
